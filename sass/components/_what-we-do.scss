@@ -1,0 +1,33 @@
+@import '../utils/variables.scss';
+
+/* WHAT WE DO */
+.what-we-do {
+  text-align: center;
+
+  &__images-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__our-jobs {
+    position: relative;
+    z-index: -1;
+  }
+
+  &__job-desc {
+    position: absolute;
+    top: 224px;
+    left: 0;
+    width: 370px;
+    height: 70px;
+    padding: 27px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: $main-white;
+    background-color: $image-desc;
+  }
+}

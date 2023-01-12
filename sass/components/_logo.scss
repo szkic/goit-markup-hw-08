@@ -1,0 +1,29 @@
+@import '../utils/variables.scss';
+
+/* LOGO */
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  line-height: 1.17;
+  text-decoration: none;
+  margin-right: 93px;
+
+  &--black {
+    color: $main-black;
+  }
+
+  /* LOGO HEADER */
+
+  &__web {
+    color: $main-blue;
+  }
+
+  /* LOGO FOOTER */
+
+  &--white {
+    color: $main-white;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,43 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $dark;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-border {
+  border-bottom: 1px solid $header-border;
+}
+
+/* lists without styles */
+.list {
+  list-style-type: none;
+}
+
+/* TITLE PAGE HEADERS */
+.heading {
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  line-height: 1.17;
+  margin-bottom: 50px;
+}

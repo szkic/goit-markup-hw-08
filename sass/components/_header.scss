@@ -1,0 +1,77 @@
+@import '../utils/variables.scss';
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+
+  &__left-section {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-list {
+    display: flex;
+    gap: 46px;
+  }
+
+  &__right-section {
+    display: flex;
+    gap: 50px;
+  }
+
+  &__nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    line-height: 1.17;
+    color: inherit;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &--contact {
+      color: $light-gray;
+    }
+  }
+
+  &__contact:hover &__raster,
+  &__nav-link:hover,
+  &__nav-link:focus,
+  &__nav-link:focus &__raster {
+    color: $main-blue;
+    fill: $main-blue;
+  }
+
+  &__raster {
+    fill: $light-gray;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__active-container {
+    position: relative;
+  }
+
+  &__is-active {
+    color: $main-blue;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      position: absolute;
+      top: 46px;
+      left: 0;
+      background-color: $main-blue;
+    }
+  }
+}
