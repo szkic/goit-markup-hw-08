@@ -1,13 +1,20 @@
 @import '../utils/variables.scss';
 
-/* FOOTER */
 .footer {
   color: $main-white;
   background-color: $dark-gray-background-color;
 
+  &__info-center {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
   &__elements {
     display: flex;
     padding: 60px 0px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
   }
 
   &__address-info {
@@ -16,6 +23,7 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     padding-top: 20px;
+    // padding-bottom: 60px;
   }
 
   &__contact {
@@ -27,7 +35,7 @@
     display: inline-block;
 
     &:nth-child(2) {
-      padding: 9px 0;
+      padding: 8px 0;
     }
 
     &:hover,
@@ -37,11 +45,12 @@
   }
 
   &__social-container {
-    margin-left: 70px;
+    // margin-left: 70px;
+    margin-bottom: 60px;
   }
 
   &__social-desc {
-    padding-top: 12px;
+    text-align: center;
     padding-bottom: 20px;
     font-size: 14px;
     font-weight: 700;
@@ -56,7 +65,9 @@
   }
 
   &__form-wrapper {
-    margin-left: 78px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   &__form {
@@ -66,15 +77,14 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: flex;
-    margin-top: 12px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
   }
 
   &__email {
     border: 1px solid $footer-email-border;
-    width: 358px;
+    // max-width: 450px;
+    // flex-basis: 100%;
     padding: 15px;
-    margin-right: 12px;
     background-color: transparent;
     border-radius: 4px;
     color: $main-white;
@@ -84,6 +94,95 @@
     &:hover {
       outline: none;
       border-color: $main-blue;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    color: $main-white;
+    background-color: $dark-gray-background-color;
+
+    &__elements {
+      display: flex;
+      padding: 60px 0px;
+    }
+
+    &__address-info {
+      font-style: normal;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      padding-top: 20px;
+    }
+
+    &__contact {
+      color: $dimmed-white;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      display: inline-block;
+
+      &:nth-child(2) {
+        padding: 9px 0;
+      }
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    &__social-container {
+      margin-left: 70px;
+    }
+
+    &__social-desc {
+      padding-top: 12px;
+      padding-bottom: 20px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    &__social-networks {
+      display: flex;
+      gap: 10px;
+    }
+
+    &__form-wrapper {
+      margin-left: 78px;
+    }
+
+    &__form {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      display: flex;
+      margin-top: 12px;
+      margin-bottom: 20px;
+    }
+
+    &__email {
+      border: 1px solid $footer-email-border;
+      width: 358px;
+      padding: 15px;
+      margin-right: 12px;
+      background-color: transparent;
+      border-radius: 4px;
+      color: $main-white;
+      transition: border-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:focus,
+      &:hover {
+        outline: none;
+        border-color: $main-blue;
+      }
     }
   }
 }

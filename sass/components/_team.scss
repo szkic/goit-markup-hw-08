@@ -1,13 +1,12 @@
 @import '../utils/variables.scss';
 
-/* TEAM */
 .team {
   text-align: center;
   background-color: $team-background-color;
 
   &__list {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 30px;
   }
 
@@ -17,13 +16,22 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    // ---------- do sprawdzenia
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 
   &__employe {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.03em;
-    line-height: 1.17;
+    line-height: 1.18;
     padding-top: 30px;
     padding-bottom: 10px;
   }
@@ -31,13 +39,57 @@
   &__job {
     font-size: 16px;
     letter-spacing: 0.03em;
-    line-height: 1.17;
+    line-height: 1.18;
     color: $light-gray;
   }
 
   &__social-networks {
     display: flex;
+    justify-content: center;
     gap: 10px;
-    padding: 16px 32px 30px;
+    padding: 16px 0 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    text-align: center;
+    background-color: $team-background-color;
+
+    &__list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    &__box {
+      background-color: $main-white;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      margin: 0px;
+    }
+
+    &__employe {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      line-height: 1.17;
+      padding-top: 30px;
+      padding-bottom: 10px;
+    }
+
+    &__job {
+      font-size: 16px;
+      letter-spacing: 0.03em;
+      line-height: 1.17;
+      color: $light-gray;
+    }
+
+    &__social-networks {
+      display: flex;
+      gap: 10px;
+      padding: 16px 32px 30px;
+    }
   }
 }

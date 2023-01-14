@@ -1,17 +1,18 @@
 @import '../utils/variables.scss';
 
-/* OUR CUSTOMERS */
 .customers {
   text-align: center;
 
   &__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 
   &__icon-container {
     display: block;
-    padding: 16px 32px;
+    padding: 13px 51px;
     border: 1px solid $icon-border;
     border-radius: 4px;
     transition-property: border-color, fill;
@@ -32,5 +33,42 @@
   &__icon-container:focus &__icon {
     border-color: $main-blue;
     fill: $main-blue;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers {
+    text-align: center;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      // gap: 30px;
+    }
+
+    &__icon-container {
+      display: block;
+      padding: 16px 32px; // ----- poprawić wymiary -------
+      border: 1px solid $icon-border;
+      border-radius: 4px;
+      transition-property: border-color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__icon {
+      fill: $icon-border;
+      transition-property: border-color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__icon-container:hover,
+    &__icon-container:hover &__icon,
+    &__icon-container:focus,
+    &__icon-container:focus &__icon {
+      border-color: $main-blue;
+      fill: $main-blue;
+    }
   }
 }

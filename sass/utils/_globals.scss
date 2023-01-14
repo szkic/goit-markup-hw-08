@@ -1,7 +1,11 @@
+// * {
+//   border: 1px dashed red;
+// }
+
 body {
   font-family: 'Roboto', sans-serif;
   color: $dark;
-  min-width: fit-content;
+  // min-width: fit-content;
 }
 
 h1,
@@ -15,15 +19,13 @@ p {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
 }
 
 .container {
-  width: 1200px;
+  max-width: 480px;
   padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .header-border {
@@ -37,8 +39,27 @@ p {
 
 /* TITLE PAGE HEADERS */
 .heading {
-  font-size: 36px;
+  font-size: 28px;
   letter-spacing: 0.03em;
   line-height: 1.17;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* TITLE PAGE HEADERS */
+  .heading {
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
