@@ -17,11 +17,12 @@
 }
 
 .mobile-menu {
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 48px 0 40px 48px;
+  padding: 48px 48px 40px 48px;
 }
 
 .mobile__links,
@@ -92,16 +93,20 @@
   max-width: 357px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .mobile__social {
   color: $main-blue;
   padding-right: 10px;
-  border-right: 1px solid $form-border;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.22;
   letter-spacing: 0.02em;
+}
+
+.mobile__social:not(:last-child) {
+  border-right: 1px solid $form-border;
 }
 
 .hamburger:hover,
