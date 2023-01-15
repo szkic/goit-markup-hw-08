@@ -45,7 +45,6 @@
   }
 
   &__social-container {
-    // margin-left: 70px;
     margin-bottom: 60px;
   }
 
@@ -94,6 +93,16 @@
     &:hover {
       outline: none;
       border-color: $main-blue;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    &__elements {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
     }
   }
 }

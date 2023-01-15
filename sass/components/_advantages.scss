@@ -37,6 +37,27 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-bottom: 45px;
+
+    &__list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    &__element {
+      flex-basis: 354px;
+    }
+
+    &__title {
+      text-align: left;
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .advantages {
     padding-top: 94px;

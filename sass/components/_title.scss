@@ -8,7 +8,7 @@
     url(../images/title_background_mobile@1.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; // COVER???!! ------------
+  background-size: cover;
 
   &__container {
     padding: 58px 0;
@@ -20,10 +20,17 @@
     font-size: 26px;
     line-height: 1.61;
     letter-spacing: 0.06em;
-    max-width: 480px;
+    max-width: 365px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    background-image: linear-gradient(to bottom, $photo-gradient, $photo-gradient),
+      url(../images/Header_tablet.jpg);
   }
 }
 
@@ -36,7 +43,7 @@
       url(../images/title_photo.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1600px;
+    background-size: cover;
 
     &__container {
       padding: 106px 0;
