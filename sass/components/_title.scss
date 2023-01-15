@@ -36,29 +36,19 @@
 
 @media screen and (min-width: 1200px) {
   .title {
-    color: $main-white;
-    text-align: center;
-    background-color: $dark-gray-background-color;
     background-image: linear-gradient(to bottom, $photo-gradient, $photo-gradient),
       url(../images/title_photo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
+    background-size: 1600px;
 
     &__container {
       padding: 106px 0;
     }
 
     &__text {
-      text-transform: uppercase;
-      font-weight: 900;
       font-size: 44px;
       line-height: 1.36;
-      letter-spacing: 0.06em;
-      width: 696px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 30px;
+      max-width: 696px;
     }
   }
 }
