@@ -73,18 +73,8 @@
               aria-expanded="false"
               aria-controls="mobile-menu"
             >
-              <svg
-                width="24"
-                height="24"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
+              <svg width="40" height="40" class="hamburger">
+                <use href="images/icons.svg#icon-hamburger"></use>
               </svg>
             </button>
           </div>
@@ -563,6 +553,7 @@
         </div>
       </div>
     </div>
+
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
@@ -571,6 +562,7 @@
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
+          class="close-menu"
         >
           <path
             fill-rule="evenodd"
@@ -581,10 +573,33 @@
       </button>
 
       <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
+        <div class="top-menu">
+          <ul class="mobile__links">
+            <li class="mobile__link">
+              <a href="index.html" class="mobile__link-styles">Agencja</a>
+            </li>
+            <li class="mobile__link">
+              <a href="portfolio.html" class="mobile__link-styles">Portfolio</a>
+            </li>
+            <li class="mobile__link"><a href="#" class="mobile__link-styles">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="bottom-menu">
+          <ul class="mobile__contacts">
+            <li class="mobile__phone">
+              <a href="#" class="mobile__phone-styles">+48 111 111 111</a>
+            </li>
+            <li class="mobile__mail">
+              <a href="#" class="mobile__mail-styles">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile__socials">
+            <li class="mobile__social"><a href="#" class="mobile__social-styles"></a>Instagram</li>
+            <li class="mobile__social"><a href="#" class="mobile__social-styles"></a>Twitter</li>
+            <li class="mobile__social"><a href="#" class="mobile__social-styles"></a>Facebook</li>
+            <li class="mobile__social"><a href="#" class="mobile__social-styles"></a>LinkedIn</li>
+          </ul>
+        </div>
       </ul>
     </div>
 
