@@ -25,47 +25,59 @@
       <div class="container">
         <div class="page-header">
           <div class="page-header__left-section">
+            <!-- LOGO -->
             <a href="index.html" class="logo logo--black"
               ><span class="logo__web">Web</span>Studio</a
             >
-            <nav>
+            <!-- LOGO END -->
+            <nav class="mobile-hide">
               <ul class="list page-header__nav-list">
-                <li>
-                  <a href="index.html" class="page-header__nav-link">Agencja</a>
-                </li>
                 <li class="page-header__active-container">
-                  <a href="portfolio.html" class="page-header__nav-link page-header__is-active"
-                    >Portfolio</a
+                  <a href="index.html" class="page-header__nav-link page-header__is-active"
+                    >Agencja</a
                   >
                 </li>
+                <li><a href="portfolio.html" class="page-header__nav-link">Portfolio</a></li>
                 <li><a href="#" class="page-header__nav-link">Kontakt</a></li>
               </ul>
             </nav>
           </div>
-          <!-- <div class="right-link">  niepotrzebny div -->
-          <ul class="list page-header__right-section">
-            <li class="page-header__contact">
-              <a
-                href="mailto:info@devstudio.com"
-                class="page-header__nav-link page-header__nav-link--contact"
-              >
-                <svg width="16" height="12" class="page-header__raster">
-                  <use href="images/icons.svg#icon-envelope"></use></svg
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="page-header__contact">
-              <a
-                href="tel:+48111111111"
-                class="page-header__nav-link page-header__nav-link--contact"
-              >
-                <svg width="10" height="16" class="page-header__raster">
-                  <use href="images/icons.svg#icon-smartphone"></use></svg
-                >+48 111 111 111</a
-              >
-            </li>
-          </ul>
-          <!-- </div> -->
+          <!------- PUSTY DIV ??? ------->
+          <div class="mobile-hide">
+            <ul class="list page-header__right-section">
+              <li class="page-header__contact">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="page-header__nav-link page-header__nav-link--contact"
+                >
+                  <svg width="16" height="12" class="page-header__raster">
+                    <use href="images/icons.svg#icon-envelope"></use></svg
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="page-header__contact">
+                <a
+                  href="tel:+48111111111"
+                  class="page-header__nav-link page-header__nav-link--contact"
+                >
+                  <svg width="10" height="16" class="page-header__raster">
+                    <use href="images/icons.svg#icon-smartphone"></use></svg
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="menu-toggle">
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg width="40" height="40" class="hamburger">
+                <use href="images/icons.svg#icon-hamburger"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -90,11 +102,25 @@
             <li class="portfolio-list__item">
               <figure class="portfolio-list__container">
                 <div class="portfolio-list__img-box">
-                  <img
+                  <!-- <img
                     src="images/portfolio/technocrack.jpg"
                     alt="technocrack"
                     width="370"
                     height="294"
+                  /> -->
+                  <img
+                    src="images/portfolio/technocrack_desktop@1x.jpg"
+                    srcset="
+                      images/portfolio/technocrack_desktop@1x.jpg 370w,
+                      images/portfolio/technocrack_desktop@2x.jpg 740w,
+                      images/portfolio/technocrack_tablet@1x.jpg  354w,
+                      images/portfolio/technocrack_tablet@2x.jpg  708w,
+                      images/portfolio/technocrack_mobile@1x.jpg  450w,
+                      images/portfolio/technocrack_mobile@2x.jpg  980w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 90vw"
+                    alt="technocrack"
+                    class="team__img"
                   />
                   <p class="portfolio-list__text">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -111,11 +137,26 @@
             <li class="portfolio-list__item">
               <figure class="portfolio-list__container">
                 <div class="portfolio-list__img-box">
-                  <img
+                  <!-- <img
                     src="images/portfolio/basketball.jpg"
                     alt="gra w koszykówkę"
                     width="370"
                     height="294"
+                  /> -->
+                  <img
+                    src="images/portfolio/basketball_desktop@1x.jpg"
+                    srcset="
+                      images/portfolio/basketball_desktop@1x.jpg 370w,
+                      images/portfolio/basketball_desktop@2x.jpg 740w,
+                      images/portfolio/basketball_tablet@1x.jpg  354w,
+                      images/portfolio/basketball_tablet@2x.jpg  708w,
+                      images/portfolio/basketball_mobile@1x.jpg  450w,
+                      images/portfolio/basketball_mobile@2x.jpg  980w
+                    "
+                    sizes="(min-width: 1200px) 370px,
+                  (min-width: 768px) 354px, (min-width: 480px) 450px, 90vw"
+                    alt="basketball"
+                    class="team__img"
                   />
                   <p class="portfolio-list__text">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -132,11 +173,26 @@
             <li class="portfolio-list__item">
               <figure class="portfolio-list__container">
                 <div class="portfolio-list__img-box">
-                  <img
+                  <!-- <img
                     src="images/portfolio/seafood.jpg"
                     alt="restauracja z owocami morza"
                     width="370"
                     height="294"
+                  /> -->
+                  <img
+                    src="images/portfolio/seafood_desktop@1x.jpg"
+                    srcset="
+                      images/portfolio/seafood_desktop@1x.jpg 370w,
+                      images/portfolio/seafood_desktop@2x.jpg 740w,
+                      images/portfolio/seafood_tablet@1x.jpg  354w,
+                      images/portfolio/seafood_tablet@2x.jpg  708w,
+                      images/portfolio/seafood_mobile@1x.jpg  450w,
+                      images/portfolio/seafood_mobile@2x.jpg  980w
+                    "
+                    sizes="(min-width: 1200px) 370px,
+                  (min-width: 768px) 354px, (min-width: 480px) 450px, 90vw"
+                    alt="seafood"
+                    class="team__img"
                   />
                   <p class="portfolio-list__text">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -153,11 +209,26 @@
             <li class="portfolio-list__item">
               <figure class="portfolio-list__container">
                 <div class="portfolio-list__img-box">
-                  <img
+                  <!-- <img
                     src="images/portfolio/headphones.jpg"
                     alt="słuchawki"
                     width="370"
                     height="294"
+                  /> -->
+                  <img
+                    src="images/portfolio/headphones_desktop@1x.jpg"
+                    srcset="
+                      images/portfolio/headphones_desktop@1x.jpg 370w,
+                      images/portfolio/headphones_desktop@2x.jpg 740w,
+                      images/portfolio/headphones_tablet@1x.jpg  354w,
+                      images/portfolio/headphones_tablet@2x.jpg  708w,
+                      images/portfolio/headphones_mobile@1x.jpg  450w,
+                      images/portfolio/headphones_mobile@2x.jpg  980w
+                    "
+                    sizes="(min-width: 1200px) 370px,
+                  (min-width: 768px) 354px, (min-width: 480px) 450px, 90vw"
+                    alt="headphones"
+                    class="team__img"
                   />
                   <p class="portfolio-list__text">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -174,7 +245,22 @@
             <li class="portfolio-list__item">
               <figure class="portfolio-list__container">
                 <div class="portfolio-list__img-box">
-                  <img src="images/portfolio/boxes.jpg" alt="pudełka" width="370" height="294" />
+                  <!-- <img src="images/portfolio/boxes.jpg" alt="pudełka" width="370" height="294" /> -->
+                  <img
+                    src="images/portfolio/boxes_desktop@1x.jpg"
+                    srcset="
+                      images/portfolio/boxes_desktop@1x.jpg 370w,
+                      images/portfolio/boxes_desktop@2x.jpg 740w,
+                      images/portfolio/boxes_tablet@1x.jpg  354w,
+                      images/portfolio/boxes_tablet@2x.jpg  708w,
+                      images/portfolio/boxes_mobile@1x.jpg  450w,
+                      images/portfolio/boxes_mobile@2x.jpg  980w
+                    "
+                    sizes="(min-width: 1200px) 370px,
+                  (min-width: 768px) 354px, (min-width: 480px) 450px, 90vw"
+                    alt="boxes"
+                    class="team__img"
+                  />
                   <p class="portfolio-list__text">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                     koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -190,7 +276,22 @@
             <li class="portfolio-list__item">
               <figure class="portfolio-list__container">
                 <div class="portfolio-list__img-box">
-                  <img src="images/portfolio/monitor.jpg" alt="monitor" width="370" height="294" />
+                  <!-- <img src="images/portfolio/monitor.jpg" alt="monitor" width="370" height="294" /> -->
+                  <img
+                    src="images/portfolio/monitor_desktop@1x.jpg"
+                    srcset="
+                      images/portfolio/monitor_desktop@1x.jpg 370w,
+                      images/portfolio/monitor_desktop@2x.jpg 740w,
+                      images/portfolio/monitor_tablet@1x.jpg  354w,
+                      images/portfolio/monitor_tablet@2x.jpg  708w,
+                      images/portfolio/monitor_mobile@1x.jpg  450w,
+                      images/portfolio/monitor_mobile@2x.jpg  980w
+                    "
+                    sizes="(min-width: 1200px) 370px,
+                  (min-width: 768px) 354px, (min-width: 480px) 450px, 90vw"
+                    alt="monitor"
+                    class="team__img"
+                  />
                   <p class="portfolio-list__text">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                     koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -206,7 +307,22 @@
             <li class="portfolio-list__item">
               <figure class="portfolio-list__container">
                 <div class="portfolio-list__img-box">
-                  <img src="images/portfolio/book.jpg" alt="książka" width="370" height="294" />
+                  <!-- <img src="images/portfolio/book.jpg" alt="książka" width="370" height="294" /> -->
+                  <img
+                    src="images/portfolio/book_desktop@1x.jpg"
+                    srcset="
+                      images/portfolio/book_desktop@1x.jpg 370w,
+                      images/portfolio/book_desktop@2x.jpg 740w,
+                      images/portfolio/book_tablet@1x.jpg  354w,
+                      images/portfolio/book_tablet@2x.jpg  708w,
+                      images/portfolio/book_mobile@1x.jpg  450w,
+                      images/portfolio/book_mobile@2x.jpg  980w
+                    "
+                    sizes="(min-width: 1200px) 370px,
+                  (min-width: 768px) 354px, (min-width: 480px) 450px, 90vw"
+                    alt="book"
+                    class="team__img"
+                  />
                   <p class="portfolio-list__text">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                     koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -222,7 +338,22 @@
             <li class="portfolio-list__item">
               <figure class="portfolio-list__container">
                 <div class="portfolio-list__img-box">
-                  <img src="images/portfolio/lab.jpg" alt="label tag" width="370" height="294" />
+                  <!-- <img src="images/portfolio/lab.jpg" alt="label tag" width="370" height="294" /> -->
+                  <img
+                    src="images/portfolio/lab_desktop@1x.jpg"
+                    srcset="
+                      images/portfolio/lab_desktop@1x.jpg 370w,
+                      images/portfolio/lab_desktop@2x.jpg 740w,
+                      images/portfolio/lab_tablet@1x.jpg  354w,
+                      images/portfolio/lab_tablet@2x.jpg  708w,
+                      images/portfolio/lab_mobile@1x.jpg  450w,
+                      images/portfolio/lab_mobile@2x.jpg  980w
+                    "
+                    sizes="(min-width: 1200px) 370px,
+                  (min-width: 768px) 354px, (min-width: 480px) 450px, 90vw"
+                    alt="lab"
+                    class="team__img"
+                  />
                   <p class="portfolio-list__text">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                     koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -238,7 +369,22 @@
             <li class="portfolio-list__item">
               <figure class="portfolio-list__container">
                 <div class="portfolio-list__img-box">
-                  <img src="images/portfolio/laptop.jpg" alt="laptop" width="370" height="294" />
+                  <!-- <img src="images/portfolio/laptop.jpg" alt="laptop" width="370" height="294" /> -->
+                  <img
+                    src="images/portfolio/laptop_desktop@1x.jpg"
+                    srcset="
+                      images/portfolio/laptop_desktop@1x.jpg 370w,
+                      images/portfolio/laptop_desktop@2x.jpg 740w,
+                      images/portfolio/laptop_tablet@1x.jpg  354w,
+                      images/portfolio/laptop_tablet@2x.jpg  708w,
+                      images/portfolio/laptop_mobile@1x.jpg  450w,
+                      images/portfolio/laptop_mobile@2x.jpg  980w
+                    "
+                    sizes="(min-width: 1200px) 370px,
+                  (min-width: 768px) 354px, (min-width: 480px) 450px, 90vw"
+                    alt="laptop"
+                    class="team__img"
+                  />
                   <p class="portfolio-list__text">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                     koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -258,7 +404,7 @@
 
     <footer class="footer">
       <div class="container footer__elements">
-        <div>
+        <div class="footer__info-center">
           <a href="index.html" class="logo logo--white"><span class="logo__web">Web</span>Studio</a>
           <address class="footer__address-info">
             m. Warszawa, Aleje Jerozolimskie 21<br />
@@ -329,5 +475,62 @@
         </form>
       </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle-close js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          class="close-menu"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <div class="mobile-menu">
+        <div class="top-menu">
+          <ul class="mobile__links">
+            <li class="mobile__link">
+              <a href="index.html" class="mobile__link-styles">Agencja</a>
+            </li>
+            <li class="mobile__link">
+              <a href="portfolio.html" class="mobile__link-styles">Portfolio</a>
+            </li>
+            <li class="mobile__link"><a href="#" class="mobile__link-styles">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="bottom-menu">
+          <ul class="mobile__contacts">
+            <li class="mobile__phone">
+              <a href="#" class="mobile__phone-styles">+48 111 111 111</a>
+            </li>
+            <li class="mobile__mail">
+              <a href="#" class="mobile__mail-styles">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile__socials">
+            <li class="mobile__social"><a href="#" class="mobile__social-styles"></a>Instagram</li>
+            <li class="mobile__social"><a href="#" class="mobile__social-styles"></a>Twitter</li>
+            <li class="mobile__social"><a href="#" class="mobile__social-styles"></a>Facebook</li>
+            <li class="mobile__social"><a href="#" class="mobile__social-styles"></a>LinkedIn</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,13 +1,13 @@
 @import '../utils/variables.scss';
 
-/* PORTFOLIO */
 .portfolio-buttons {
   text-align: center;
   margin-bottom: 50px;
 
   &__list {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 8px;
   }
 
@@ -96,5 +96,31 @@
   &__img-box {
     position: relative;
     overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-buttons {
+    &__list {
+      justify-content: center;
+    }
+  }
+
+  .portfolio-list {
+    &__container {
+      max-width: 354px;
+    }
+
+    &__title {
+      height: 146px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-buttons {
+    &__container {
+      max-width: 370px;
+    }
   }
 }
