@@ -109,44 +109,10 @@
 
 @media screen and (min-width: 1200px) {
   .footer {
-    // color: $main-white;
-    // background-color: $dark-gray-background-color;
-
     &__info-center {
       text-align: left;
       margin-bottom: 0;
     }
-
-    // &__elements {
-    //   display: flex;
-    //   padding: 60px 0px;
-    // }
-
-    // &__address-info {
-    //   font-style: normal;
-    //   font-size: 14px;
-    //   line-height: 1.71;
-    //   letter-spacing: 0.03em;
-    //   padding-top: 20px;
-    // }
-
-    // &__contact {
-    //   color: $dimmed-white;
-    //   text-decoration: none;
-    //   font-size: 14px;
-    //   line-height: 1.71;
-    //   letter-spacing: 0.03em;
-    //   display: inline-block;
-
-    //   &:nth-child(2) {
-    //     padding: 9px 0;
-    //   }
-
-    //   &:hover,
-    //   &:focus {
-    //     text-decoration: underline;
-    //   }
-    // }
 
     &__social-container {
       margin-left: 70px;
@@ -155,19 +121,8 @@
 
     &__social-desc {
       padding-top: 12px;
-      // padding-bottom: 20px;
-      // font-size: 14px;
-      // font-weight: 700;
-      // line-height: 1.14;
-      // letter-spacing: 0.03em;
-      // text-transform: uppercase;
       text-align: left;
     }
-
-    // &__social-networks {
-    //   display: flex;
-    //   gap: 10px;
-    // }
 
     &__form-wrapper {
       display: block;

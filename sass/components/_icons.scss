@@ -11,7 +11,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &_icon {
+  &__icon {
     fill: $icon-border;
     transition-property: fill;
     transition-duration: 250ms;
@@ -34,7 +34,7 @@
   }
 }
 
-.social-icon_icon {
+.social-icon__icon {
   .social-icon:hover &,
   .social-icon:focus & {
     fill: $main-white;
